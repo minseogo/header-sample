@@ -1,0 +1,7 @@
+#hd h1,
+#hd .iconmenu {
+  width: 0;
+}
+#hd a {
+  white-space: nowrap;
+}
