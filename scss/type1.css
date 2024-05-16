@@ -18,8 +18,16 @@
   padding: 0 1rem !important;
   border: 0 !important;
 }
+#hd .gnb .d1 ul:before, #hd .gnb .d1 ul:after {
+  content: "";
+  display: block;
+  height: 16px;
+}
 #hd .gnb .d1 ul.leftul {
   left: -2rem;
+}
+#hd .gnb .d1 ul li {
+  padding: 1rem 0;
 }
 #hd .gnb .d1 ul li a {
   font-size: 0.85rem;
