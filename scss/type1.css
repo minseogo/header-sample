@@ -26,9 +26,6 @@
 #hd .gnb .d1 ul.leftul {
   left: -2rem;
 }
-#hd .gnb .d1 ul li {
-  padding: 1rem 0;
-}
 #hd .gnb .d1 ul li a {
   font-size: 0.85rem;
   color: white !important;
