@@ -1,9 +1,72 @@
+a{
+    text-decoration: none;
+    color: black;
+}
 #hd{
     h1,
-    .iconmenu{
-        width: 0;
+    .iconMenu{
+        width:0;
     }
+    h1{
         a{
             white-space: nowrap;
+            
         }
+    }
+    .gnb {
+        .gnb_li{
+            position: relative;
+            &:hover{
+                .gnb_a{
+                    color: red; // 활성화
+                }
+                .gnb_ul{
+                    max-height: 180px; // 각각의 소메뉴가 사이즈가 다르므로 height로 진행불가
+                    border-radius: 0  0  30px 30px;
+                    border-bottom: 1px solid #ccc; 
+                 
+                }
+            }
+            .gnb_a {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            .gnb_ul{
+                top: 100%;
+                min-width:10rem;
+                // padding: 0 1.5rem;
+                background-color: white;
+                margin-top: -1px;
+                border: 1px solid #ccc;
+                border-top:0;
+                border-bottom: 0;
+                // border-radius: 0  0  10px 10px;
+                overflow: hidden;
+                // 모든 소메뉴 대메뉴를 기준으로 가운데로
+                transform: translateX(-50%);
+                left: 50%;
+                // 드롭다운 애니메이션
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease-out, border-radius 1.5s ease-out;
+
+                
+
+
+                &:after,
+                &:before{
+                    content: "";
+                    display: block;
+                    height: 1rem;
+                    
+                   
+                }
+                &:after{
+                    border-bottom: 1px solid transparent;
+                  
+                }
+            }
+        }
+    }
 }
